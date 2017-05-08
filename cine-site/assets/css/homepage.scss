@@ -1,0 +1,197 @@
+.homepage-conatiner{
+	position: absolute;
+	top: 85%;
+	left: 5%;
+}
+
+/*share icons style start*/
+.share {
+  max-width: 600px;
+  height: 100px;
+  margin: 0 auto;
+  -webkit-filter: url("#goo");
+  filter: url("../share.html#goo");
+  position: relative;
+}
+
+.share-button,
+.share-toggle-button {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: #ccc;
+  text-align: center;
+  color: #484848;
+  border: none;
+  outline: none;
+}
+
+.share-button:hover,
+.share-toggle-button:hover {
+  color: #484848;
+}
+
+.share-button {
+  font-size: 30px;
+  background: #737070;
+  -webkit-transform: scale(0.95, 0.95);
+  transform: scale(0.95, 0.95);
+  color: #222;
+}
+
+a.share-button {
+  color: #3D4444;
+}
+
+a.share-button:hover, 
+a.share-button:focus {
+  color: #dfd7d7;
+}
+
+.share-toggle-button {
+  z-index: 9;
+  background: #fff;
+  font-size: 20px;
+}
+
+.share-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.share-item {
+  display: inline-block;
+}
+
+/*share icons style end*/
+
+/*image animation start*/
+.character-1-container{
+	position: absolute;
+    top: 40%;
+    left: 12%;	
+    display: block;
+}
+/*image animation end*/
+/*dot style start*/
+.pagination{
+	position: absolute;
+	top: 90%;
+	left: 40%;
+}
+.dotstyle ul {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.dotstyle li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 16px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.3);
+	text-indent: -999em; /* make the text accessible to screen readers */
+	cursor: pointer;
+	position: absolute;
+}
+
+.dotstyle li a:focus {
+	outline: none;
+}
+/* Dot to stroke */
+
+.dotstyle-dotstroke li a {
+	box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 0.5);
+	-webkit-transition: box-shadow 0.3s ease;
+	transition: box-shadow 0.3s ease;
+}
+
+.dotstyle-dotstroke li a:hover,
+.dotstyle-dotstroke li a:focus {
+	box-shadow: inset 0 0 0 8px white;
+}
+
+.dotstyle-dotstroke li.current a {
+	box-shadow: inset 0 0 0 2px white;
+}
+
+/* SVG draw circle stroke */
+
+.dotstyle-drawcircle li {
+	width: 18px;
+	height: 18px;
+}
+
+.dotstyle-drawcircle li a {
+	top: 3px;
+	left: 3px;
+	width: 12px;
+	height: 12px;
+	background-color: #c44d48;
+	-webkit-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+}
+
+.dotstyle-drawcircle li svg {
+	z-index: 10;
+}
+
+.dotstyle-drawcircle li svg circle {
+	opacity: 0;
+	fill: none;
+	stroke: #fff;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-dasharray: 39 39;
+	stroke-dashoffset: 39;
+	/* length of circle path (pi*2r) */
+	-webkit-transition: stroke-dashoffset 0.3s, opacity 0.3s;
+	transition: stroke-dashoffset 0.3s, opacity 0.3s;
+}
+
+.dotstyle-drawcircle li.current a,
+.dotstyle-drawcircle li a:hover,
+.dotstyle-drawcircle li a:focus {
+	opacity: 0.5;
+}
+
+.dotstyle-drawcircle li.current svg circle {
+	opacity: 1;
+	stroke-dashoffset: 0;
+	-webkit-transition: stroke-dashoffset 0.3s, opacity 0.15s;
+	transition: stroke-dashoffset 0.3s, opacity 0.15s;
+}
+
+/*dot style end*/

@@ -1,0 +1,9 @@
+/* line 1, page-2.scss */
+.banner-view {
+  width: 600px;
+  height: 400px;
+  background: #fff;
+  top: 20%;
+  left: 25%;
+  position: relative;
+}

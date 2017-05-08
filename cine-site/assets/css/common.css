@@ -1,0 +1,111 @@
+/* line 1, common.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* line 9, common.scss */
+section, header, footer, nav, div, span, ul, li, a {
+  box-sizing: border-box;
+}
+
+/* line 13, common.scss */
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+/* line 23, common.scss */
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 29, common.scss */
+header ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+/* line 34, common.scss */
+header ul a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #4d4d4d;
+  height: 50px;
+  display: block;
+  position: relative;
+}
+
+/* line 43, common.scss */
+header ul a span {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+}
+
+/* line 50, common.scss */
+section {
+  float: left;
+  display: block;
+  height: 100%;
+  padding: 75px 0 0 0;
+  margin: 0;
+}
+
+/* line 58, common.scss */
+#section-section1 {
+  background: #2c3e50;
+}
+
+/* line 62, common.scss */
+#section-section2 {
+  background: #16a085;
+}
+
+/* line 66, common.scss */
+#section-section3 {
+  background: #27ae60;
+}
+
+/* line 70, common.scss */
+#section-section4 {
+  background: #c0392b;
+}
+
+/* line 73, common.scss */
+#section-section5 {
+  background: #9e9e9e;
+}
+
+/* line 77, common.scss */
+.horizon-prev, .horizon-next {
+  position: fixed;
+  top: 50%;
+  margin-top: -24px;
+  z-index: 9999;
+}
+
+/* line 84, common.scss */
+.horizon-prev {
+  left: 20px;
+}
+
+/* line 88, common.scss */
+.horizon-next {
+  right: 20px;
+}
+
+/* line 91, common.scss */
+.logo-img {
+  margin-top: 25px;
+  margin-left: 40px;
+  position: fixed;
+}

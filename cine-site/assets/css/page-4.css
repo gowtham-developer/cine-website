@@ -1,0 +1,38 @@
+/* line 1, page-4.scss */
+.vscroll-container {
+  width: 600px;
+  height: 400px;
+  background: #fff;
+  left: 25%;
+  top: 10%;
+  box-sizing: border-box;
+  position: relative;
+  overflow-y: scroll;
+}
+
+/* line 11, page-4.scss */
+.page4-img {
+  float: right;
+  position: relative;
+  top: 33%;
+}
+
+/* line 16, page-4.scss */
+.valign-bg {
+  width: 100%;
+  height: auto;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* line 22, page-4.scss */
+.col-page {
+  width: 140px;
+  height: 140px;
+  background: #484848;
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

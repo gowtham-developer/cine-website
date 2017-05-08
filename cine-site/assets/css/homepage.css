@@ -1,0 +1,223 @@
+/* line 1, homepage.scss */
+.homepage-conatiner {
+  position: absolute;
+  top: 85%;
+  left: 5%;
+}
+
+/*share icons style start*/
+/* line 8, homepage.scss */
+.share {
+  max-width: 600px;
+  height: 100px;
+  margin: 0 auto;
+  -webkit-filter: url("#goo");
+  filter: url("../share.html#goo");
+  position: relative;
+}
+
+/* line 18, homepage.scss */
+.share-button,
+.share-toggle-button {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: #ccc;
+  text-align: center;
+  color: #484848;
+  border: none;
+  outline: none;
+}
+
+/* line 37, homepage.scss */
+.share-button:hover,
+.share-toggle-button:hover {
+  color: #484848;
+}
+
+/* line 41, homepage.scss */
+.share-button {
+  font-size: 30px;
+  background: #737070;
+  -webkit-transform: scale(0.95, 0.95);
+  transform: scale(0.95, 0.95);
+  color: #222;
+}
+
+/* line 49, homepage.scss */
+a.share-button {
+  color: #3D4444;
+}
+
+/* line 54, homepage.scss */
+a.share-button:hover,
+a.share-button:focus {
+  color: #dfd7d7;
+}
+
+/* line 58, homepage.scss */
+.share-toggle-button {
+  z-index: 9;
+  background: #fff;
+  font-size: 20px;
+}
+
+/* line 64, homepage.scss */
+.share-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 70, homepage.scss */
+.share-item {
+  display: inline-block;
+}
+
+/*share icons style end*/
+/*image animation start*/
+/* line 77, homepage.scss */
+.character-1-container {
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  display: block;
+}
+
+/*image animation end*/
+/*dot style start*/
+/* line 85, homepage.scss */
+.pagination {
+  position: absolute;
+  top: 90%;
+  left: 40%;
+}
+
+/* line 90, homepage.scss */
+.dotstyle ul {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  cursor: default;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 105, homepage.scss */
+.dotstyle li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0 16px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* line 115, homepage.scss */
+.dotstyle li a {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border-radius: 50%;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-indent: -999em;
+  /* make the text accessible to screen readers */
+  cursor: pointer;
+  position: absolute;
+}
+
+/* line 129, homepage.scss */
+.dotstyle li a:focus {
+  outline: none;
+}
+
+/* Dot to stroke */
+/* line 134, homepage.scss */
+.dotstyle-dotstroke li a {
+  box-shadow: inset 0 0 0 8px rgba(255, 255, 255, 0.5);
+  -webkit-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+}
+
+/* line 141, homepage.scss */
+.dotstyle-dotstroke li a:hover,
+.dotstyle-dotstroke li a:focus {
+  box-shadow: inset 0 0 0 8px white;
+}
+
+/* line 145, homepage.scss */
+.dotstyle-dotstroke li.current a {
+  box-shadow: inset 0 0 0 2px white;
+}
+
+/* SVG draw circle stroke */
+/* line 151, homepage.scss */
+.dotstyle-drawcircle li {
+  width: 18px;
+  height: 18px;
+}
+
+/* line 156, homepage.scss */
+.dotstyle-drawcircle li a {
+  top: 3px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  background-color: #c44d48;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+/* line 166, homepage.scss */
+.dotstyle-drawcircle li svg {
+  z-index: 10;
+}
+
+/* line 170, homepage.scss */
+.dotstyle-drawcircle li svg circle {
+  opacity: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 39 39;
+  stroke-dashoffset: 39;
+  /* length of circle path (pi*2r) */
+  -webkit-transition: stroke-dashoffset 0.3s, opacity 0.3s;
+  transition: stroke-dashoffset 0.3s, opacity 0.3s;
+}
+
+/* line 186, homepage.scss */
+.dotstyle-drawcircle li.current a,
+.dotstyle-drawcircle li a:hover,
+.dotstyle-drawcircle li a:focus {
+  opacity: 0.5;
+}
+
+/* line 190, homepage.scss */
+.dotstyle-drawcircle li.current svg circle {
+  opacity: 1;
+  stroke-dashoffset: 0;
+  -webkit-transition: stroke-dashoffset 0.3s, opacity 0.15s;
+  transition: stroke-dashoffset 0.3s, opacity 0.15s;
+}
+
+/*dot style end*/

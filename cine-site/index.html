@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="assets/jquery/jquery.js"></script>
+    <script type="text/javascript" src="assets/jquery/jquery.touchSwipe.js"></script>
+    <script type="text/javascript" src="assets/jquery/jquery.horizonScroll.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+      <link rel="stylesheet" type="text/css" src="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+
+
+
+</head>
+<body>
+<header data-role="header" id="header">
+    <div class="logo-img"><img src="assets/images/logo.png"></div>
+</header>
+
+<div class="horizon-prev"><img src="assets/images/l-arrow.png"></div>
+<div class="horizon-next"><img src="assets/images/r-arrow.png"></div>
+
+<section data-role="section" id="section-section1">
+    <div class="homepage-conatiner">
+        <!-- social media icons container start-->
+           <div class="content">
+                <div class="share">
+                    <button class="share-toggle-button">
+                        <i class="share-icon fa fa-share-alt"></i>
+                    </button>
+                    <ul class="share-items">
+                        <li class="share-item">
+                            <a href="#" class="share-button">
+                                <i class="share-icon fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="share-item">
+                            <a href="#" class="share-button">
+                                <i class="share-icon fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="share-item">
+                            <a href="#" class="share-button">
+                                <i class="share-icon fa fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li class="share-item">
+                            <a href="#" class="share-button">
+                                <i class="share-icon fa fa-tumblr"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        <!-- social media icons container end -->
+         
+
+    </div>
+     <div class="character-1-container">
+         <img src="assets/images/character-1.png" title="character-1" alt="character-1" class="animated bounceInLeft">
+         <img src="assets/images/character-2.png" title="character-1" alt="character-1" class="animated bounceInDown">
+         <img src="assets/images/character-3.png" title="character-1" alt="character-1" class="animated bounceInRight">
+         <img src="assets/images/character-4.png" title="character-1" alt="character-1" class="animated bounceInUp">
+         <img src="assets/images/character-5.png" title="character-1" alt="character-1" class="animated wobble">
+     </div>
+      
+      <div class="pagination">
+
+               <div class="dotstyle dotstyle-smalldotstroke">
+                    <ul>
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#section-section2">About</a></li>
+                        <li><a href="#section-section3">Products</a></li>
+                        <li><a href="#section-section4">Portfolio</a></li>
+                        <li><a href="#section-section5">Blog</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+</section>
+
+
+
+
+<section data-role="section" id="section-section2">
+    <div class="banner-view">
+        <p>Banner Pending</p>
+    </div>
+</section>
+<section data-role="section" id="section-section3" ></section>
+<section data-role="section" id="section-section4">
+<div class="page4-img">
+         <img src="assets/images/character-1.png" title="character-1" alt="character-1" class="animated bounceInLeft">
+         <img src="assets/images/character-2.png" title="character-1" alt="character-1" class="animated bounceInDown">
+     </div>
+     <div class="vscroll-container">
+          <div class="valign-bg">
+              <div class="col-page"></div>
+              <div class="col-page"></div>
+              <div class="col-page"></div>
+              <div class="col-page"></div>
+              <div class="col-page"></div>
+              <div class="col-page"></div>
+              <div class="col-page"></div>
+              <div class="col-page"></div>
+              <div class="col-page"></div>
+          </div>
+     </div>
+</section>
+<section data-role="section" id="section-section5">
+
+<form>
+    <table>
+        <tr>
+            <td class="input-label">First Name</td>
+            <td><input type="text" name="name" placeholder="Name"></td>
+        </tr>
+        <tr>
+            <td class="input-label">Second Name</td>
+            <td><input type="text" name="lastname" placeholder="lastname"></td>
+        </tr>
+        <tr>
+           <td class="input-label">Email</td>
+           <td><input type="text" name="email" placeholder="Email"></td>
+        </tr>
+        <tr>
+            <td class="input-label">Password</td>
+            <td><input type="password" name="Password" placeholder="Password"></td>
+        </tr>
+        <tr>
+        <td class="input-label">Phone Number</td>
+        <td><input type="number" name="phonenumber"></td>
+        </tr>
+        <tr>
+            <td><button type="submit" class="submit">Submit</button></td>
+        </tr>
+    </table>
+
+</form>
+
+ <div class="video-overlay">
+<video poster="assets/images/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+ <source src="assets/videos/polina.webm" type="video/webm">
+ <source src="assets/videos/polina.mp4" type="video/mp4">
+</video>
+</div>
+
+</section>
+
+<footer data-role="footer" id="footer"></footer>
+
+<script type="text/javascript">
+    // By default, swipe is enabled.
+    $('section').horizon();
+
+    // If you do not want to include another plugin, TouchSwipe, you can set it to false in the default options by passing in the option as false.
+    //$('section').horizon({swipe: false});
+
+    $(document).on('click', '.go-to-2', function () {
+        $(document).horizon('scrollTo', 'section-section2');
+    });
+</script>
+<script src="assets/js/share.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/TweenMax.min.js"></script>
+<script type="text/javascript">
+    var vid = document.getElementById("bgvid");
+var pauseButton = document.querySelector("#polina button");
+
+if (window.matchMedia('(prefers-reduced-motion)').matches) {
+    vid.removeAttribute("autoplay");
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+}
+
+function vidFade() {
+  vid.classList.add("stopfade");
+}
+
+vid.addEventListener('ended', function()
+{
+// only functional if "loop" is removed 
+vid.pause();
+// to capture IE10
+vidFade();
+}); 
+
+
+pauseButton.addEventListener("click", function() {
+  vid.classList.toggle("stopfade");
+  if (vid.paused) {
+    vid.play();
+    pauseButton.innerHTML = "Pause";
+  } else {
+    vid.pause();
+    pauseButton.innerHTML = "Paused";
+  }
+})
+
+</script>
+</body>
+</html>
